@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import ShopInfos from './ShopInfos';
 import ShopInfosLoadingComponent from './ShopInfosLoading'
+import axiosInstance from "../../axios";
 
 function ShopsInformation() {
     const ShopInfosLoading = ShopInfosLoadingComponent(ShopInfos);
@@ -10,12 +11,12 @@ function ShopsInformation() {
     });
     useEffect(() => {
         setAppState({loading: true});
-        const apiUrl = `http://127.0.0.1:8000/api/shop_info/`;
-        fetch(apiUrl)
-            .then(data => data.json())
-            .then((shop_infos => {
-                setAppState({loading: false, shop_infos: shop_infos});
-            }));
+
+        axiosInstance.get('shop_info/')
+            .then(res => {
+                const shop_infos = res.data
+                setAppState({loading: false, shop_infos: shop_infos})
+            });
     }, [setAppState]);
     return (
         <div>
