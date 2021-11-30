@@ -37,8 +37,10 @@ export default function LogIn() {
 
             }).catch(e => {
                 console.log(e);
-                if (e.response.data && e.response.data.detail.length !== 0) {
-                    alert(e.response.data.detail);
+                if (e.response.data.detail) {
+                    if (e.response.data.detail.length !== 0) {
+                        alert(e.response.data.detail);
+                    }
                 }
         });
     };
