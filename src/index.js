@@ -8,7 +8,8 @@ import {Route, BrowserRouter, Switch} from "react-router-dom";
 import ShopInformation from "./components/shop_info/ShopInformation";
 import Register from "./components/auth/register";
 import Login from "./components/auth/login";
-import LogOut from "./components/auth/logout"
+import LogOut from "./components/auth/logout";
+import Shop from "./components/shop/single_shop";
 
 ReactDOM.render(
     <BrowserRouter>
@@ -20,6 +21,7 @@ ReactDOM.render(
                 <Route path="/register" component={Register} />
                 <Route path="/login" component={Login} />
                 <Route path="/logout" component={LogOut} />
+                <Route path="/shops/:id" component={Shop} />
 
 
             </Switch>
