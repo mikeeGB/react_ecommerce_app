@@ -18,7 +18,9 @@ const ShopInfos = (props) => {
                             <Card.Text>
                                 Owner: {shop_info.owner}
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <div className="d-grid">
+                            <Button variant="primary" href={`shops/${shop_info.id}`}>Go somewhere</Button>
+                            </div>
                         </Card.Body>
                     </Card>
                     </Col>
