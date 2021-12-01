@@ -19,7 +19,7 @@ const ShopInfos = (props) => {
                                 Owner: {shop_info.owner}
                             </Card.Text>
                             <div className="d-grid">
-                            <Button variant="primary" href={`shops/${shop_info.id}`}>Go somewhere</Button>
+                            <Button variant="primary" href={`/shops/${shop_info.id}`}>Go somewhere</Button>
                             </div>
                         </Card.Body>
                     </Card>
