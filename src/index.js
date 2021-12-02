@@ -10,6 +10,7 @@ import Register from "./components/auth/register";
 import Login from "./components/auth/login";
 import LogOut from "./components/auth/logout";
 import Shop from "./components/shop/single_shop";
+import All_products from "./components/products/all_products";
 
 ReactDOM.render(
     <BrowserRouter>
@@ -22,6 +23,7 @@ ReactDOM.render(
                 <Route path="/login" component={Login} />
                 <Route path="/logout" component={LogOut} />
                 <Route path="/shops/:id" component={Shop} />
+                <Route path="/products" component={All_products} />
 
 
             </Switch>
