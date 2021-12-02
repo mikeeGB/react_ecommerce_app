@@ -20,7 +20,7 @@ export default function Shop() {
     console.log(data.shop_products)
     return (
         <React.Fragment>
-            <h2 className='text-center'>Shop Products available</h2>
+            <h2 className='text-center mt-4'>Shop Products available</h2>
             <Container>
                 <Row className>
             {data.shop_products.map((prod) => {

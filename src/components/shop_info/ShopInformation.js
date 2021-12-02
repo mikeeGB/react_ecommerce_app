@@ -20,7 +20,7 @@ function ShopsInformation() {
     }, [setAppState]);
     return (
         <div>
-            <h2 className='text-center'>Shop Information</h2>
+            <h2 className='text-center mt-4'>Shop Information</h2>
             <ShopInfosLoading isLoading={appState.loading} shop_infos={appState.shop_infos}/>
         </div>
     );
