@@ -1,5 +1,6 @@
 import React from "react";
 import {Card} from "react-bootstrap";
+import CardsMain from "./cards_main_page";
 
 export default function MainPageDescription() {
     return (
@@ -14,6 +15,7 @@ export default function MainPageDescription() {
                     </Card.Text>
                 </Card.Body>
             </Card>
+            <CardsMain/>
             <section className="page-section">
                 <div className="container">
                     <div className="row text-center">
