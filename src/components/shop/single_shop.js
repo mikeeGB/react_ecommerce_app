@@ -42,7 +42,7 @@ export default function Shop() {
                             </ListGroup>
                         <Card.Body>
                             <div className="d-grid">
-                            <Button variant="success">Go somewhere</Button>
+                            <Button variant="success" href={`/products/${prod.id}`}>Details</Button>
                             </div>
                         </Card.Body>
                     </Card>
