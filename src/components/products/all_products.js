@@ -67,7 +67,7 @@ export default function All_products() {
                             </ListGroup>
                         <Card.Body>
                             <div className="d-grid">
-                            <Button variant="success">Go somewhere</Button>
+                            <Button variant="success" href={`/products/${product.id}`}>Details</Button>
                             </div>
                         </Card.Body>
                     </Card>
