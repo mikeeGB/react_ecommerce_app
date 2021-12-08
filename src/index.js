@@ -12,6 +12,8 @@ import LogOut from "./components/auth/logout";
 import Shop from "./components/shop/single_shop";
 import All_products from "./components/products/all_products";
 import ProductDetailed from "./components/products/product_detailed";
+import AdminPanel from "./components/admin_panel/admin";
+import CreateShopInfo from "./components/admin_panel/create_shop_info";
 
 ReactDOM.render(
     <BrowserRouter>
@@ -26,6 +28,9 @@ ReactDOM.render(
                 <Route path="/shops/:id" component={Shop} />
                 <Route path="/products/:id" component={ProductDetailed} />
                 <Route path="/products" component={All_products} />
+                <Route exact path="/admin/create/shop_info/" component={CreateShopInfo} />
+                <Route path="/admin" component={AdminPanel} />
+
 
 
             </Switch>
