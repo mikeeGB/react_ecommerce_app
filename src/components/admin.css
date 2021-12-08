@@ -1,0 +1,28 @@
+.admin-link:hover {
+   color: #52a68c;
+}
+
+.admin-link {
+    color: black;
+    text-decoration: underline;
+}
+
+.admin-button {
+    background-color: #52a68c;
+}
+
+.admin-edit-icon {
+    color: #52a68c;
+}
+
+.admin-edit-icon:hover {
+    color: #397a66;
+}
+
+.admin-del-icon {
+    color: #c74545;
+}
+
+.admin-del-icon:hover {
+    color: #ab1818;
+}
