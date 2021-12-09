@@ -4,9 +4,11 @@ import UserAdminShops from "./user_shops";
 
 export default function AdminPanel() {
     return (
+        <section className="vh-100">
         <React.Fragment>
             <UserAdminProducts/>
             <UserAdminShops/>
         </React.Fragment>
+        </section>
     )
 }
