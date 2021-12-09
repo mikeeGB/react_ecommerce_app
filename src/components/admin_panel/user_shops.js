@@ -33,11 +33,11 @@ export default function UserAdminShops() {
                         return(
                             <tr key={admin_shop.id}>
                                 <td>{admin_shop.id}</td>
-                                <td><a href={`/shops/${admin_shop.shop_info}`} className="admin-link">{admin_shop.shop_name}</a></td>
+                                <td><a href={`/shops/${admin_shop.id}`} className="admin-link">{admin_shop.shop_name}</a></td>
                                 <td>
                                     <div className="row text-center">
                                         <div className="col">
-                                            <a href={'#edit'}><i className="fas fa-edit admin-edit-icon"/></a>
+                                            <a href={`/admin/edit/shop_info/${admin_shop.id}/`}><i className="fas fa-edit admin-edit-icon"/></a>
                                         </div>
                                         <div className="col">
                                             <a href={'#del'}><i className="fas fa-trash-alt admin-del-icon"/></a>
