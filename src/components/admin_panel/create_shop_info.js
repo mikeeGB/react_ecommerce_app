@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axiosInstance from '../../axios';
 import { useHistory } from 'react-router-dom';
+import {Button} from "react-bootstrap";
 
 
 export default function CreateShopInfo() {
@@ -26,7 +27,15 @@ export default function CreateShopInfo() {
             })
             .then((res) =>{
                history.push('/admin/');
-            });
+            })
+            .catch(
+                function (error){
+                    if (error.response) {
+                        let error_message = error.response.data.shop_name.toString();
+                        alert(error_message);
+                    }
+                }
+            );
     };
 
     return (
@@ -40,8 +49,6 @@ export default function CreateShopInfo() {
                                 <div className="card-body p-5">
                                     <h2 className="text-uppercase text-center mb-5">Give name to your shop</h2>
 
-                                    <form>
-
                                         <div className="form-outline mb-4">
                                             <input className="form-control form-control-lg"
                                                    id="shop_name"
@@ -52,15 +59,13 @@ export default function CreateShopInfo() {
                                         </div>
 
                                         <div className="d-flex justify-content-center">
-                                            <button type="button"
-                                                    className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                                            <Button type="button"
+                                                    className="btn btn-success"
                                             onClick={handleSubmit}
                                             >
                                                 Add shop name
-                                            </button>
+                                            </Button>
                                         </div>
-
-                                    </form>
 
                                 </div>
                             </div>
