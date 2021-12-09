@@ -40,7 +40,7 @@ export default function UserAdminShops() {
                                             <a href={`/admin/edit/shop_info/${admin_shop.id}/`}><i className="fas fa-edit admin-edit-icon"/></a>
                                         </div>
                                         <div className="col">
-                                            <a href={'#del'}><i className="fas fa-trash-alt admin-del-icon"/></a>
+                                            <a href={`/admin/delete/shop_info/${admin_shop.id}/`}><i className="fas fa-trash-alt admin-del-icon"/></a>
                                         </div>
 
                                     </div>
