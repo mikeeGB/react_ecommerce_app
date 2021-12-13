@@ -12,7 +12,7 @@ function ShopsInformation() {
     useEffect(() => {
         setAppState({loading: true});
 
-        axiosInstance.get('shop_info/')
+        axiosInstance.get('shops/')
             .then(res => {
                 const shop_infos = res.data
                 setAppState({loading: false, shop_infos: shop_infos})
