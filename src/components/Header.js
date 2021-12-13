@@ -16,6 +16,8 @@ export default function Header() {
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/products">All products</Nav.Link>
                     <Nav.Link href="/shop_infos">Shops</Nav.Link>
+                    <Nav.Link href="/admin">Admin</Nav.Link>
+
 
                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                       <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

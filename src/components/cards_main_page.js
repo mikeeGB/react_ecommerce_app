@@ -26,6 +26,22 @@ export default function CardsMain() {
                             </Card>
                         </div>
                     </div>
+
+                    <div className="row text-center">
+                        <div className="col">
+                            <Card className="custom_card">
+                                <Card.Img variant="top"
+                                          src="https://www.bootstrapdash.com/wp-content/uploads/2018/01/create-bootstrap-admin-template.png" />
+                                {/*variants: https://www.bootstrapdash.com/wp-content/uploads/2019/07/twitter-bootstrap-admin-templates.png
+                                            https://meetanshi.com/blog/wp-content/uploads/2019/11/How-To-Use-Dependency-Multiple-Field-In-Magento-2-Admin-Form.png
+                                            https://www.gomage.com/wp/wp-content/uploads/2014/02/Magento-Logo_-How-To-Adjust-Logos-Via-Admin-Panel.jpg*/}
+                                <Card.Body>
+                                    <Button href="/admin" className="stretched-link">Admin Panel</Button>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </React.Fragment>
