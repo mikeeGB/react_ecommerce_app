@@ -16,6 +16,8 @@ import AdminPanel from "./components/admin_panel/admin";
 import CreateShopInfo from "./components/admin_panel/create_shop_info";
 import EditShopInfo from "./components/admin_panel/edit_shop_info";
 import DeleteShopInfo from "./components/admin_panel/delete_shop_info";
+import CreateProduct from "./components/admin_panel/create_product";
+import DeleteProduct from "./components/admin_panel/delete_product";
 
 
 ReactDOM.render(
@@ -35,7 +37,13 @@ ReactDOM.render(
                 <Route exact path="/admin/edit/shop_info/:id/" component={EditShopInfo} />
                 <Route exact path="/admin/delete/shop_info/:id/" component={DeleteShopInfo} />
 
+
+                <Route exact path="/admin/create/product/" component={CreateProduct}/>
+                <Route exact path="/admin/delete/product/:id/" component={DeleteProduct}/>
+
+
                 <Route path="/admin" component={AdminPanel} />
+
 
 
 
