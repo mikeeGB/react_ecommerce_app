@@ -52,7 +52,7 @@ export default function UserAdminProducts() {
                                             <a href={'#edit'}><i className="fas fa-edit admin-edit-icon"/></a>
                                         </div>
                                         <div className="col">
-                                            <a href={'#del'}><i className="fas fa-trash-alt admin-del-icon"/></a>
+                                            <a href={`/admin/delete/product/${admin_prod.id}/`}><i className="fas fa-trash-alt admin-del-icon"/></a>
                                         </div>
 
                                     </div>
@@ -62,7 +62,7 @@ export default function UserAdminProducts() {
                     })}
                     </tbody>
                 </Table>
-                <div className="text-end mb-5"><Button className={"btn-success"}>Add product</Button></div>
+                <div className="text-end mb-5"><Button href={"/admin/create/product/"} className={"btn-success"}>Add product</Button></div>
             </Container>
         </React.Fragment>
     )
