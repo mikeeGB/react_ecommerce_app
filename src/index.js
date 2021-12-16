@@ -18,6 +18,8 @@ import EditShopInfo from "./components/admin_panel/edit_shop_info";
 import DeleteShopInfo from "./components/admin_panel/delete_shop_info";
 import CreateProduct from "./components/admin_panel/create_product";
 import DeleteProduct from "./components/admin_panel/delete_product";
+import ProtectedRoute from "./components/ProtectedRoute";
+import EditProduct from "./components/admin_panel/edit_product";
 
 
 ReactDOM.render(
@@ -33,16 +35,17 @@ ReactDOM.render(
                 <Route path="/shops/:id" component={Shop} />
                 <Route path="/products/:id" component={ProductDetailed} />
                 <Route path="/products" component={All_products} />
-                <Route exact path="/admin/create/shop_info/" component={CreateShopInfo} />
-                <Route exact path="/admin/edit/shop_info/:id/" component={EditShopInfo} />
-                <Route exact path="/admin/delete/shop_info/:id/" component={DeleteShopInfo} />
+                <ProtectedRoute exact path="/admin/create/shop_info/" component={CreateShopInfo} />
+                <ProtectedRoute exact path="/admin/edit/shop_info/:id/" component={EditShopInfo} />
+                <ProtectedRoute exact path="/admin/delete/shop_info/:id/" component={DeleteShopInfo} />
 
 
-                <Route exact path="/admin/create/product/" component={CreateProduct}/>
-                <Route exact path="/admin/delete/product/:id/" component={DeleteProduct}/>
+                <ProtectedRoute exact path="/admin/create/product/" component={CreateProduct}/>
+                <ProtectedRoute exact path="/admin/delete/product/:id/" component={DeleteProduct}/>
+                <ProtectedRoute path="/admin/edit/product/:id/" component={EditProduct} />
 
 
-                <Route path="/admin" component={AdminPanel} />
+                <ProtectedRoute path="/admin" component={AdminPanel} />
 
 
 
