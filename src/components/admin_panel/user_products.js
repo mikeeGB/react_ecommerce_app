@@ -49,7 +49,7 @@ export default function UserAdminProducts() {
                                 <td>
                                     <div className="row text-center">
                                         <div className="col">
-                                            <a href={'#edit'}><i className="fas fa-edit admin-edit-icon"/></a>
+                                            <a href={`/admin/edit/product/${admin_prod.id}/`}><i className="fas fa-edit admin-edit-icon"/></a>
                                         </div>
                                         <div className="col">
                                             <a href={`/admin/delete/product/${admin_prod.id}/`}><i className="fas fa-trash-alt admin-del-icon"/></a>
