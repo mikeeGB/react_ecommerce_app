@@ -26,13 +26,12 @@ export default function CreateShopInfo() {
                 shop_name: formData.shop_name,
             })
             .then((res) =>{
-               history.push('/admin/');
+               history.push('/admin/create/product/');
             })
             .catch(
                 function (error){
                     if (error.response) {
-                        let error_message = error.response.data.shop_name.toString();
-                        alert(error_message);
+                        console.log(error.response);
                     }
                 }
             );
