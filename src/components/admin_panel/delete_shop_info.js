@@ -30,7 +30,7 @@ export default function DeleteShopInfo() {
         <section className="vh-100">
         <Container>
             <div className="text-center mt-5 top-50">
-            <h2>Do you want to delete chosen shop?</h2>
+            <h2>Do you want to delete chosen shop? It will lead to deleting related products!</h2>
                 <Button onClick={handleSubmit} className="btn-danger m-4">Delete this shop</Button>
                 <Button className="m-4" href={'/admin/'}>Go back to admin</Button>
             </div>

@@ -17,9 +17,10 @@ export default function Shop() {
         });
         }, [id, setData]);
 
-    console.log(data.shop_products)
+
     return (
         <React.Fragment>
+            <section className="vh-100">
             <h2 className='text-center mt-4'>Shop Products available</h2>
             <Container>
                 <Row className>
@@ -51,6 +52,7 @@ export default function Shop() {
             })}
                 </Row>
             </Container>
+            </section>
         </React.Fragment>
     )
 }

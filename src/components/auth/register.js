@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import axiosInstance from '../../axios';
 import {useHistory} from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 
 export default function SignUp() {
@@ -56,13 +57,14 @@ export default function SignUp() {
                                 <div className="card-body p-5">
                                     <h2 className="text-uppercase text-center mb-5">Sign up</h2>
 
-                                    <form>
+                                    <form onSubmit={handleSubmit}>
 
                                         <div className="form-outline mb-4">
                                             <input type="text"
                                                    className="form-control form-control-lg"
                                                    id="username"
                                                    name="username"
+                                                   required
                                             onChange={handleChange}
                                             />
                                             <label className="form-label">Your Username</label>
@@ -73,6 +75,7 @@ export default function SignUp() {
                                                    className="form-control form-control-lg"
                                                    id="email"
                                                    name="email"
+                                                   required
                                             onChange={handleChange}
                                             />
                                             <label className="form-label">Your Email</label>
@@ -83,6 +86,7 @@ export default function SignUp() {
                                                    className="form-control form-control-lg"
                                                    id="password"
                                                    name="password"
+                                                   required
                                             onChange={handleChange}
                                             />
                                             <label className="form-label">Password</label>
@@ -100,12 +104,12 @@ export default function SignUp() {
                                         </div>
 
                                         <div className="d-flex justify-content-center">
-                                            <button type="button"
-                                                    className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
-                                            onClick={handleSubmit}
+                                            <Button type="submit"
+                                                    className="btn btn-lg btn-success"
+
                                             >
                                                 Register
-                                            </button>
+                                            </Button>
                                         </div>
 
                                         <p className="text-center text-muted mt-5 mb-0">Have already an account? <a

@@ -6,6 +6,7 @@ const ShopInfos = (props) => {
     if (!shop_infos || shop_infos.length === 0) return <p>Can't find shops data</p>;
     return (
         <React.Fragment>
+            <section className="vh-100">
             <Container>
                 <Row className>
             {shop_infos.map((shop_info) => {
@@ -28,6 +29,7 @@ const ShopInfos = (props) => {
             })}
                 </Row>
             </Container>
+            </section>
         </React.Fragment>
     )
 }

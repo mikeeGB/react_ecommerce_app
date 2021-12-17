@@ -12,10 +12,10 @@ export default function UserAdminProducts() {
     useEffect(() => {
         axiosInstance.get('my_products/').then((res) => {
             setData({admin_products: res.data});
+            console.log(res.data);
         });
         }, [setData]);
 
-    console.log(data)
 
     return (
         <React.Fragment>

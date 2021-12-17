@@ -62,26 +62,28 @@ export default function EditShopInfo() {
                         <div className="col-12 col-md-9 col-lg-7 col-xl-6">
                             <div className="card" style={{borderRadius: 15}}>
                                 <div className="card-body p-5">
-                                    <h2 className="text-uppercase text-center mb-5">Rename your shop</h2>
+                                    <h2 className="text text-center mb-5">Rename your shop</h2>
 
+                                    <form onSubmit={handleSubmit}>
                                         <div className="form-outline mb-4">
                                             <input className="form-control form-control-lg"
                                                    id="shop_name"
                                                    name="shop_name"
                                                    value={formData.shop_name}
+                                                   required
                                             onChange={handleChange}
                                             />
                                             <label className="form-label">Shop Name</label>
                                         </div>
 
                                         <div className="d-flex justify-content-center">
-                                            <Button type="button"
+                                            <Button type="submit"
                                                     className="btn btn-success"
-                                            onClick={handleSubmit}
                                             >
                                                 Change shop name
                                             </Button>
                                         </div>
+                                        </form>
 
                                 </div>
                             </div>

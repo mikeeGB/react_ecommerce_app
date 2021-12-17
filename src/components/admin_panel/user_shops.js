@@ -11,10 +11,9 @@ export default function UserAdminShops() {
     useEffect(() => {
         axiosInstance.get('my_shops/').then((res) => {
             setData({admin_shops: res.data});
+            console.log(res.data);
         });
         }, [setData]);
-
-    console.log(data)
 
     return (
         <React.Fragment>

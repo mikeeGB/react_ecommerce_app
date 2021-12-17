@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import axiosInstance from '../../axios';
 import {useHistory} from "react-router-dom";
+import {Button} from "react-bootstrap";
 
 
 export default function LogIn() {
@@ -56,13 +57,14 @@ export default function LogIn() {
                                 <div className="card-body p-5">
                                     <h2 className="text-uppercase text-center mb-5">Log in</h2>
 
-                                    <form>
+                                    <form onSubmit={handleSubmit}>
 
                                         <div className="form-outline mb-4">
                                             <input type="email"
                                                    className="form-control form-control-lg"
                                                    id="email"
                                                    name="email"
+                                                   required
                                             onChange={handleChange}
                                             />
                                             <label className="form-label">Your Email</label>
@@ -73,6 +75,7 @@ export default function LogIn() {
                                                    className="form-control form-control-lg"
                                                    id="password"
                                                    name="password"
+                                                   required
                                             onChange={handleChange}
                                             />
                                             <label className="form-label">Password</label>
@@ -90,12 +93,12 @@ export default function LogIn() {
                                         </div>
 
                                         <div className="d-flex justify-content-center">
-                                            <button type="button"
-                                                    className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
-                                            onClick={handleSubmit}
+                                            <Button type="submit"
+                                                    className="btn btn-lg btn-success"
+
                                             >
-                                                Log in
-                                            </button>
+                                                Log In
+                                            </Button>
                                         </div>
 
                                         <p className="text-center text-muted mt-5 mb-0">Don't have an account? <a
