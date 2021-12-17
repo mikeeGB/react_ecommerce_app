@@ -22,7 +22,8 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import EditProduct from "./components/admin_panel/edit_product";
 
 
-ReactDOM.render(
+const routing = (
+
     <BrowserRouter>
         <React.StrictMode>
             <Header/>
@@ -44,16 +45,13 @@ ReactDOM.render(
                 <ProtectedRoute exact path="/admin/delete/product/:id/" component={DeleteProduct}/>
                 <ProtectedRoute path="/admin/edit/product/:id/" component={EditProduct} />
 
-
                 <ProtectedRoute path="/admin" component={AdminPanel} />
-
-
-
 
 
             </Switch>
             <Footer/>
         </React.StrictMode>
-    </BrowserRouter>,
-  document.getElementById('root')
+    </BrowserRouter>
 );
+
+ReactDOM.render(routing, document.getElementById('root'));
