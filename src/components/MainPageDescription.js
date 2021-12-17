@@ -8,11 +8,9 @@ export default function MainPageDescription() {
         <Card>
                 <Card.Img variant="top" src="https://files.cdn.printful.com/o/upload/lpg-image-upload/1b/1b81e5e91be3554f8cf213600dfa71f2" />
                 <Card.Body>
-                    <Card.Text>
-                        <p className="h3 text-center">
-                            Customize your products, add them to our platform and earn money!
-                        </p>
-                    </Card.Text>
+                    <h4 className="text-center">
+                    Customize your products, add them to our platform and earn money!
+                    </h4>
                 </Card.Body>
             </Card>
             <CardsMain/>
