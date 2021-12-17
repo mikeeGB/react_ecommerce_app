@@ -6,8 +6,9 @@ export default function AdminPanel() {
     return (
         <section className="vh-100">
         <React.Fragment>
-            <UserAdminProducts/>
+            <h2 className='text-center mt-5'>Admin panel</h2>
             <UserAdminShops/>
+            <UserAdminProducts/>
         </React.Fragment>
         </section>
     )
