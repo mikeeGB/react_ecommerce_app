@@ -45,11 +45,20 @@ Creating and editing shops and related products of current user
 
 ## Deleting shop and related products
 
-/admin/delete/shop_info/25/
+/admin/delete/shop_info/:id/
 ![Delete_shop](https://raw.githubusercontent.com/mikeeGB/react_ecommerce_app/master/screenshots_for_readme/9_deleting_shop.png)
 
 ## Creating products
+
 /admin/create/product/
 ![Create_product](https://raw.githubusercontent.com/mikeeGB/react_ecommerce_app/master/screenshots_for_readme/10_create_product.png)
 
-##
+## Editing products
+
+/admin/edit/product/:id/
+![Edit_product](https://raw.githubusercontent.com/mikeeGB/react_ecommerce_app/master/screenshots_for_readme/11_edit_product.png)
+
+## Deleting products
+
+/admin/delete/product/:id/
+![Delete_product](https://raw.githubusercontent.com/mikeeGB/react_ecommerce_app/master/screenshots_for_readme/12_delete_product.png)
