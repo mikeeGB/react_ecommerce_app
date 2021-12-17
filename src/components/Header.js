@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
-import {Container, Nav, NavDropdown, NavLink} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import {Container, Nav, NavDropdown} from "react-bootstrap";
 
 
 export default function Header() {
@@ -27,9 +26,10 @@ export default function Header() {
                       <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                     </NavDropdown>
                   </Nav>
-                    <Link component={NavLink} to="/register">Register</Link>
-                    <Link component={NavLink} to="/login">Login</Link>
-                    <Link component={NavLink} to="/logout">Logout</Link>
+
+                  <Nav.Link href="/register">Register</Nav.Link>
+                  <Nav.Link href="/login">Login</Nav.Link>
+                  <Nav.Link href="/logout">Logout</Nav.Link>
 
                 </Navbar.Collapse>
               </Container>
