@@ -20,7 +20,6 @@ export default function UserAdminProducts() {
     return (
         <React.Fragment>
             <Container className="mt-5">
-                <h2 className='text-center mb-5'>Admin panel</h2>
                 <h4>My products</h4>
                 <Table bordered hover>
                     <thead className="text-center">
