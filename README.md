@@ -20,4 +20,3 @@ Home page with photo slider and some links
 
 /shop_infos/
 
-![Shop info](https://raw.githubusercontent.com/mikeeGB/react_ecommerce_app/master/screenshots_for_readme/shop_info_route.png)
