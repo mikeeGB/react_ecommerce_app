@@ -28,7 +28,7 @@ export default function ProductDetailed() {
 
     return (
         <React.Fragment>
-            <section className="vh-100">
+
             <div className="container mt-5">
                 <div className="card">
                     <div className="row">
@@ -120,7 +120,7 @@ export default function ProductDetailed() {
                     </div>
                 </div>
             </div>
-            </section>
+
         </React.Fragment>
     )
 }

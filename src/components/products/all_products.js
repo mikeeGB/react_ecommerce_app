@@ -27,7 +27,7 @@ export default function All_products() {
 
     return (
         <React.Fragment>
-            <section className="vh-100">
+
             <Container>
                 <h2 className='text-center mt-4'>All products list</h2>
                     <div className="row justify-content-center">
@@ -77,7 +77,7 @@ export default function All_products() {
             })}
                 </Row>
             </Container>
-            </section>
+
         </React.Fragment>
     )
 }
