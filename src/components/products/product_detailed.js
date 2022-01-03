@@ -26,6 +26,14 @@ export default function ProductDetailed() {
         return content;
     }
 
+    function add_to_cart() {
+        var cart_products = JSON.parse(localStorage.getItem("cart")) || [];
+        cart_products.push({title: data.products.title, description: data.products.description, creator: data.products.creator, shop_name: data.products.shop_name, color: data.products.color,
+                            size: data.products.size, image: data.products.image, price: data.products.price});
+        localStorage.setItem("cart", JSON.stringify(cart_products));
+        alert("Product added to cart!");
+    }
+
     return (
         <React.Fragment>
 
@@ -112,7 +120,7 @@ export default function ProductDetailed() {
                                 </div>
                                 <hr />
                                 <button className="btn btn-lg btn-primary text-uppercase"> Buy now </button>
-                                <button className="btn btn-lg btn-outline-success text-uppercase">
+                                <button className="btn btn-lg btn-outline-success text-uppercase" onClick={add_to_cart}>
                                     <i className="fas fa-shopping-cart"/> Add to cart </button>
 
                             </article>
