@@ -28,10 +28,21 @@ export default function ProductDetailed() {
 
     function add_to_cart() {
         var cart_products = JSON.parse(localStorage.getItem("cart")) || [];
-        cart_products.push({title: data.products.title, description: data.products.description, creator: data.products.creator, shop_name: data.products.shop_name, color: data.products.color,
-                            size: data.products.size, image: data.products.image, price: data.products.price});
-        localStorage.setItem("cart", JSON.stringify(cart_products));
-        alert("Product added to cart!");
+
+        // check if product is in cart already
+        let product_is_already_in_cart = cart_products.some(elem => elem.title === data.products.title)
+        console.log(product_is_already_in_cart);
+
+        if(product_is_already_in_cart){
+            alert("This product is already in your shopping cart. Please add another product")
+        }
+        else {
+            cart_products.push({title: data.products.title, description: data.products.description, creator: data.products.creator, shop_name: data.products.shop_name, color: data.products.color,
+                                size: data.products.size, image: data.products.image, price: data.products.price});
+            localStorage.setItem("cart", JSON.stringify(cart_products));
+            alert("Product added to cart!");
+        }
+
     }
 
     return (
