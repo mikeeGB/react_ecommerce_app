@@ -20,6 +20,7 @@ import CreateProduct from "./components/admin_panel/create_product";
 import DeleteProduct from "./components/admin_panel/delete_product";
 import ProtectedRoute from "./components/ProtectedRoute";
 import EditProduct from "./components/admin_panel/edit_product";
+import ProductCart from "./components/products/product_cart";
 
 
 const routing = (
@@ -46,6 +47,9 @@ const routing = (
                 <ProtectedRoute path="/admin/edit/product/:id/" component={EditProduct} />
 
                 <ProtectedRoute path="/admin" component={AdminPanel} />
+
+                <Route path="/cart" component={ProductCart} />
+
 
 
             </Switch>

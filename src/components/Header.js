@@ -26,6 +26,7 @@ export default function Header() {
                     {/*</NavDropdown>*/}
                   </Nav>
 
+                  <Nav.Link href="/cart"><i className="fas fa-shopping-cart"/></Nav.Link>
                   <Nav.Link href="/register">Register</Nav.Link>
                   <Nav.Link href="/login">Login</Nav.Link>
                   <Nav.Link href="/logout">Logout</Nav.Link>
